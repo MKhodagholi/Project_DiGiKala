@@ -143,6 +143,33 @@ Project_DiGiKala/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/build
 .PHONY : Project_DiGiKala/fast
 
+Seller.o: Seller.cpp.o
+
+.PHONY : Seller.o
+
+# target to build an object file
+Seller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/Seller.cpp.o
+.PHONY : Seller.cpp.o
+
+Seller.i: Seller.cpp.i
+
+.PHONY : Seller.i
+
+# target to preprocess a source file
+Seller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/Seller.cpp.i
+.PHONY : Seller.cpp.i
+
+Seller.s: Seller.cpp.s
+
+.PHONY : Seller.s
+
+# target to generate assembly for a file
+Seller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/Seller.cpp.s
+.PHONY : Seller.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Project_DiGiKala"
+	@echo "... Seller.o"
+	@echo "... Seller.i"
+	@echo "... Seller.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

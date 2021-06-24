@@ -3,4 +3,4 @@ project(Project_DiGiKala)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Project_DiGiKala main.cpp)
+add_executable(Project_DiGiKala main.cpp Seller.cpp Seller.h)

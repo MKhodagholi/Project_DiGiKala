@@ -94,12 +94,12 @@ clean: CMakeFiles/Project_DiGiKala.dir/clean
 CMakeFiles/Project_DiGiKala.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_DiGiKala.dir/build.make CMakeFiles/Project_DiGiKala.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Project_DiGiKala"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Project_DiGiKala"
 .PHONY : CMakeFiles/Project_DiGiKala.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Project_DiGiKala.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Project_DiGiKala.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Project_DiGiKala.dir/rule

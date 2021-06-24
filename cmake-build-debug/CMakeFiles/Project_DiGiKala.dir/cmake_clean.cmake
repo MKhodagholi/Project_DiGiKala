@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Project_DiGiKala.dir/Seller.cpp.o"
   "CMakeFiles/Project_DiGiKala.dir/main.cpp.o"
   "Project_DiGiKala"
   "Project_DiGiKala.pdb"

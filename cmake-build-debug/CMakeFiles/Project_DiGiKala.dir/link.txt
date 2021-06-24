@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Project_DiGiKala.dir/main.cpp.o  -o Project_DiGiKala 
+/usr/bin/c++  -g   CMakeFiles/Project_DiGiKala.dir/main.cpp.o CMakeFiles/Project_DiGiKala.dir/Seller.cpp.o  -o Project_DiGiKala 

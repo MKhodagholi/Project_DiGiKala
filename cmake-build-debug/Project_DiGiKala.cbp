@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mohammad/AP/Project_DiGiKala/Seller.cpp">
+			<Option target="Project_DiGiKala"/>
+		</Unit>
+		<Unit filename="/home/mohammad/AP/Project_DiGiKala/Seller.h">
+			<Option target="Project_DiGiKala"/>
+		</Unit>
 		<Unit filename="/home/mohammad/AP/Project_DiGiKala/main.cpp">
 			<Option target="Project_DiGiKala"/>
 		</Unit>
