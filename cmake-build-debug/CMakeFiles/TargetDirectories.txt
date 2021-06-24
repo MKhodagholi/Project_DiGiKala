@@ -1,0 +1,3 @@
+/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles/Project_DiGiKala.dir

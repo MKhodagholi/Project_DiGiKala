@@ -1,0 +1,10 @@
+#ifndef PROJECT_DIGIKALA_SELLER_H
+#define PROJECT_DIGIKALA_SELLER_H
+
+
+class Seller {
+
+};
+
+
+#endif //PROJECT_DIGIKALA_SELLER_H
