@@ -31,3 +31,21 @@ Seller::~Seller() {
     }
     delete [] products;
 }
+
+bool Seller::registrationProducts(bool flag) {
+    if (flag)
+        return true;
+    return false;
+}
+
+bool Seller::registreationCodeDiscuss(bool flag) {
+    if (flag)
+        return true;
+    return false;
+}
+
+bool Seller::confirmationReturnProduct(bool flag) {
+    if (flag)
+        return true;
+    return false;
+}

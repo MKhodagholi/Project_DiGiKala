@@ -16,9 +16,9 @@ public:
     Seller(const Seller &);
     ~Seller();
     void set_products(std::string**);
-    bool registrationProducts();
-    bool registreationCodeDiscuss();
-    bool confirmationReturnProduct();
+    bool registrationProducts(bool);
+    bool registreationCodeDiscuss(bool);
+    bool confirmationReturnProduct(bool);
     void showSaleStatistics();
 
 };
