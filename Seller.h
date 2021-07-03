@@ -10,9 +10,9 @@ private:
     int count_products;
     long wallet;
     std::string **products;
-    int phoneNumber;
+    long phoneNumber;
 public:
-    Seller(std::string, std::string, std::string, long, std::string**, int, int);
+    Seller(std::string, std::string, std::string, long, std::string**, long, int);
     Seller(const Seller &);
     ~Seller();
     void set_products(std::string**);

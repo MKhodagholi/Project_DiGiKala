@@ -1,7 +1,7 @@
 #include "Seller.h"
 
 
-Seller::Seller(std::string username, std::string password, std::string name, long wallet, std::string **products, int phoneNumber, int count_products)
+Seller::Seller(std::string username, std::string password, std::string name, long wallet, std::string **products, long phoneNumber, int count_products)
         : username(username), password(password), name(name), wallet(wallet), phoneNumber(phoneNumber), count_products(count_products)
 {
         products = new std::string*[count_products]();
