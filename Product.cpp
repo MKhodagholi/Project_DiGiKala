@@ -1,5 +1,6 @@
 #include "Product.h"
 #include <iostream>
+#include <fstream>
 
 Product::Product(std::string name, int price, int count, std::string description, int score, vector<std::string> comment)
     : name(name), price(price), count(count), description(description), score(score), comment(comment) {}
@@ -74,6 +75,20 @@ std::ostream& Product::operator << (std::ostream &print, const Product &obj) {
     print << "| Comments: " << std::endl;
     for (int i = 0; i < comment.size(); i++)
         std::print << "| \t" << (i + 1) << ") " << comment[i] << std::endl;
-
+    print << "_______________________________________________________";
     return print;
+}
+
+void Product::write_file() {
+    std::ofstream writer("product.txt", std::ios::app);
+    writer << *this;
+    writer.close();
+}
+
+void Product::read_file() {
+    std::istream reader("product.txt");
+    std::string lineString;
+    while (getline(reader, lineString))
+        std::cout << lineString;
+    reader.close();
 }

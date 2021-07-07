@@ -29,6 +29,8 @@ public:
     std::string get_comment(int);
     class OutOfRange();
     std::ostream& operator << (std::ostream&, const Product&);
+    void write_file();
+    void read_file();
 };
 
 
