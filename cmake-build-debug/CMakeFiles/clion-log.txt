@@ -1,4 +1,7 @@
 /home/mohammad/AP/JetBrains.CLion.2020.3.2.Linux/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mohammad/AP/Project_DiGiKala
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mohammad/AP/Project_DiGiKala/cmake-build-debug
+CMake Error at CMakeLists.txt:1:
+  Parse error.  Expected a command name, got bad character with text "".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/mohammad/AP/Project_DiGiKala/cmake-build-debug/CMakeFiles/CMakeOutput.log".
