@@ -7,7 +7,10 @@ private:
     std::string username;
     std::string password;
     long wallet;
-    class Address {
+    
+    // class Address
+    
+    class Address { 
     private:
         std::string country;
         std::string city;
@@ -38,7 +41,7 @@ private:
     std::string phoneNumber;
 public:
     Costomer();
-    Costomer(std::string, std::string, longm Address, std::string);
+    Costomer(std::string, std::string, long, Address, std::string);
     void set_username(std::string);
     void set_password(std::string);
     void set_wallet(long);
