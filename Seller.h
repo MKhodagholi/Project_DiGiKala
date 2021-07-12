@@ -10,7 +10,7 @@ private:
     std::string username;
     std::string password;
     std::string name;
-    int count_typeProducts;
+    int count_typeProducts; 
     long wallet;
     std::vector<Product> products;
     long phoneNumber;
@@ -31,13 +31,13 @@ public:
     long get_wallet();
     void set_phoneNumber(long);
     long get_phone_number();
-    bool registrationProducts(bool);
-    bool registreationCodeDiscuss(bool);
-    bool confirmationReturnProduct(bool);
+    bool registrationProducts(bool); // tayide list ajnas
+    bool registreationCodeDiscuss(bool); // tayide code takhfif
+    bool confirmationReturnProduct(bool); // tayide bargashtan ajnas 
     void showSaleStatistics();
     std::ostream& operator << (std::ostream&, const Seller&);
-    void write_file();
-    void read_file();
+    void write_file(); // writing in file
+    void read_file(); // read from file
 };
 
 
