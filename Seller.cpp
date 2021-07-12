@@ -9,19 +9,19 @@ void Seller::set_products(std::vector<Product> products) {
 }
 
 Product Seller::get_product(int num) {
+	
+	// check if -(num + 1) < range < num 
+	// if num is negetive it start to pop from end
+	
     if (num > -1 && num < count_typeProducts)
         return products[num];
     else if (num < 0 && abs(num) <= count_typeProducts)
         return products[num + count_typeProducts];
     else
-        throw products.OutOfRange;
+        throw products.OutOfRange; // out of range
 }
 
-void Seller::add_product(Product product) {
-    products.push_back(product);
-}
-
-void Seller::add_product(Product product) {
+void Seller::add_product(Product product) { // adding product in vector
     products.push_back(product);
 }
 
@@ -103,11 +103,15 @@ std::ostream& Seller::operator << (std::ostream &print, const Seller &obj) {
     return print;
 }
 
-void Seller::write_file() {
+// writing in a file with operator <<
+
+void Seller::write_file() { 
     std::ofstream writer("Seller.txt", std::ios::app);
     writer << *this;
     writer.close();
 }
+
+// reading from file line by line
 
 void Seller::read_file() {
     std::ifstream reader("Seller.txt");
