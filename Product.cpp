@@ -68,14 +68,13 @@ std::string Product::get_comment(int num) {
 }
 
 std::ostream& Product::operator << (std::ostream &print, const Product &obj) {
-    print << "-------------------------------------------------------";
-    print << "| Name: " << name << " " << "Price: " << price << std::endl;
-    print << "| Count: " << count << " " << "Description: " << description << std::endl;
-    print << "| Score: " << score << std::endl;
-    print << "| Comments: " << std::endl;
+    print << "Name: " << name << " " << "Price: " << price << std::endl;
+    print << "Count: " << count << " " << "Description: " << description << std::endl;
+    print << "Score: " << score << std::endl;
+    print << "Comments: " << std::endl;
     for (int i = 0; i < comment.size(); i++)
-        std::print << "| \t" << (i + 1) << ") " << comment[i] << std::endl;
-    print << "_______________________________________________________";
+        std::print << "\t" << (i + 1) << ") " << comment[i] << std::endl;
+        
     return print;
 }
 
@@ -84,6 +83,8 @@ void Product::write_file() {
     writer << *this;
     writer.close();
 }
+
+// reading from a file line by line
 
 void Product::read_file() {
     std::istream reader("product.txt");

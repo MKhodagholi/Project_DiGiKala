@@ -27,7 +27,7 @@ public:
     int count_comments();
     void show_comments();
     std::string get_comment(int);
-    class OutOfRange();
+    class OutOfRange(); // if range is out of range , throw a obj from class OutOfRange
     std::ostream& operator << (std::ostream&, const Product&);
     void write_file();
     void read_file();
