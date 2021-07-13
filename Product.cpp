@@ -43,3 +43,25 @@ void Product::set_score(double score) {
 double Product::get_score() {
     return score;
 }
+
+void Product::add_comment(std::string comment) {
+    this->comment.push_back(comment);
+}
+
+int Product::count_comments() {
+    return comment.size();
+}
+
+void Product::show_comments() {
+    for (int i = 0; i < comment.size(); i++)
+        std::cout << (i + 1) << ") " << comment[i] << std::endl;
+}
+
+std::string Product::get_comment(int num) {
+    if (num > -1 && num < comment.size())
+        return comment[num];
+    else if (abs(num) <= comment.size() && num < 0)
+        return comment[num + comment.size()];
+    else
+        throw OutOfRange();
+}

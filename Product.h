@@ -23,6 +23,11 @@ public:
     std::string get_description();
     void set_score(double);
     double get_score();
+    void add_comment(std::string);
+    void show_comments();
+    int count_comments();
+    std::string get_comment(int);
+    class OutOfRange{};
 
 };
 
