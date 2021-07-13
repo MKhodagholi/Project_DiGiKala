@@ -65,3 +65,35 @@ std::string Product::get_comment(int num) {
     else
         throw OutOfRange();
 }
+
+std::ostream& operator << (std::ostream &print, const Product &obj) {
+    print << "-------------------------------------------------------";
+    print << "| Name: " << obj.name << " " << "Price: " << obj.price << std::endl;
+    print << "| Count: " << obj.count << " " << "Description: " << obj.description << std::endl;
+    print << "| Score: " << obj.score << std::endl;
+    print << "| Comments: " << std::endl;
+    for (int i = 0; i < obj.comment.size(); i++)
+        print << "| \t" << (i + 1) << ") " << obj.comment[i] << std::endl;
+    print << "_______________________________________________________";
+    return print;
+}
+
+std::istream &operator >> (std::istream &strm, Product &obj) {
+    std::string name;
+    double price;
+    int count;
+    std::string description;
+    double score=0;
+    std::vector<std::string> comment(0);
+    strm>>name>>price>>count;
+    char des[100];
+    char des2[100];
+    strm.getline(des,100,'.');
+    for(int i=0; i<100 && des[i]!=NULL; i++){
+        des2[i]=des[i+1];
+    }
+    description=des2;
+    Product product(name,price,count,description,score,comment);
+    obj=product;
+    return strm;
+}

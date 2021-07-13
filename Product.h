@@ -28,6 +28,8 @@ public:
     int count_comments();
     std::string get_comment(int);
     class OutOfRange{};
+    friend std::ostream& operator << (std::ostream&, const Product&);
+    friend std::istream& operator >> (std::istream&, Product&);
 
 };
 
