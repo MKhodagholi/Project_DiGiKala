@@ -48,3 +48,11 @@ void Admin::addProduct(Product product) {
 void Admin::removeProduct(int numberOfProductInVector) {
     productOfAdmin.erase(productOfAdmin.begin()+numberOfProductInVector-1);
 }
+
+void Admin::showAverageOfScores() {
+    double total=0;
+    for(int i=0; i<productOfAdmin.size(); i++){
+        total+=productOfAdmin.at(i).get_score();
+    }
+    cout<<"average of scores of products is "<<total/productOfAdmin.size();
+}

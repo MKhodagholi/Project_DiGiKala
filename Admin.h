@@ -21,6 +21,9 @@ public:
     void setProductOfAdmin(vector <Product>);
     void addProduct(Product);
     void removeProduct(int);
+    void acceptBuyProduct();
+    void acceptReturnProduct();
+    void showAverageOfScores();
 
 };
 
