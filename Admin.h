@@ -9,6 +9,8 @@ class Admin {
     string password;
     long phoneNumber;
     vector <Product> productOfAdmin;
+public:
+    Admin(string, string, long);
 
 };
 
