@@ -11,6 +11,14 @@ class Admin {
     vector <Product> productOfAdmin;
 public:
     Admin(string, string, long);
+    string getUsername();
+    void setUsername(string);
+    string getPassword();
+    void setPassword(string);
+    long getPhoneNumber();
+    void setPhoneNumber(long);
+    vector <Product> getProductOfAdmin();
+    void setProductOfAdmin(vector <Product>);
 
 };
 
