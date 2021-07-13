@@ -19,6 +19,8 @@ public:
     void setPhoneNumber(long);
     vector <Product> getProductOfAdmin();
     void setProductOfAdmin(vector <Product>);
+    void addProduct(Product);
+    void removeProduct(int);
 
 };
 

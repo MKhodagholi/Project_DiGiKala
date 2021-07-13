@@ -40,3 +40,11 @@ vector<Product> Admin::getProductOfAdmin() {
 void Admin::setProductOfAdmin(vector <Product> productOfAdmin) {
     this->productOfAdmin=productOfAdmin;
 }
+
+void Admin::addProduct(Product product) {
+    productOfAdmin.push_back(product);
+}
+
+void Admin::removeProduct(int numberOfProductInVector) {
+    productOfAdmin.erase(productOfAdmin.begin()+numberOfProductInVector-1);
+}
