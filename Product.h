@@ -11,6 +11,9 @@ private:
     std::string description;
     double score;
     std::vector<std::string> comment;
+public:
+    Product(std::string, double, int, std::string, double, std::vector<std::string>);
+
 };
 
 
