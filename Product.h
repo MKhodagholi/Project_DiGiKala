@@ -13,6 +13,16 @@ private:
     std::vector<std::string> comment;
 public:
     Product(std::string, double, int, std::string, double, std::vector<std::string>);
+    void set_name(std::string);
+    std::string get_name();
+    void set_price(double);
+    double get_price();
+    void set_count(int);
+    int get_count();
+    void set_description(std::string);
+    std::string get_description();
+    void set_score(double);
+    double get_score();
 
 };
 
