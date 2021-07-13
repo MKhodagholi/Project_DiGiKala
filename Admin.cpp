@@ -32,3 +32,11 @@ long Admin::getPhoneNumber() {
 void Admin::setPhoneNumber(long phoneNumber) {
     this->phoneNumber=phoneNumber;
 }
+
+vector<Product> Admin::getProductOfAdmin() {
+    return this->productOfAdmin;
+}
+
+void Admin::setProductOfAdmin(vector <Product> productOfAdmin) {
+    this->productOfAdmin=productOfAdmin;
+}
