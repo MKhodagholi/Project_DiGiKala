@@ -24,6 +24,8 @@ public:
     void acceptBuyProduct();
     void acceptReturnProduct();
     void showAverageOfScores();
+    void readFromFile();
+    void writeInFile();
 
 };
 
